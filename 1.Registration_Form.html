@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <meta charset="UTF-8">
+	<title>Registration Form</title>
+	<style>
+		table {
+            border-collapse: collapse;
+        }
+        
+        table,
+        td,
+        th {
+            border: 2px ridge grey;
+            text-align: left;
+            padding: 5px;
+        }
+        
+        .centered {
+            text-align: center;
+        }
+		td:first-child{
+			text-align: center;
+            background-color: lightblue;
+            padding: 5px;
+        }
+		
+		</style>
+		
+</head>
+
+<body>
+	<form method="get">
+	
+		<table>
+			<tbody>
+			<tr>
+				<th class="centered"><label for="ln">Last Name</label></th>
+				<td><input type="text" name="lname" id="ln" size="25" placeholder="Nakov"></td>
+			</tr>
+			<tr>
+				<th class="centered"><label for="fn">First Name</label></th>
+				<td><input type="text" name="fname" id="fn" size="25" placeholder="Svetlin"></td>
+			</tr>
+			<tr>
+				<th class="centered"><label for="adr">Address</label></th>
+				<td><textarea Style="overflow:auto;resize:none" rows="3" id="adr" placeholder="17 Hristo Botev Str. floor 3, apt. 12"></textarea></td>
+
+			</tr>
+			<tr>
+				<th class="centered"><label for="city">City</label></th>
+				<td><input type="text" name="city" id="city" size="15" placeholder="Kaspichan">
+					<label for="state">State</label>
+						<input type="text" name="state" id="state" size="3" >
+					</th>
+			</tr>
+			<tr>
+				<th class="centered"><label for="pc">Zip/Postal Code</label></th>
+				<td><input type="text" name="postalcode" id="pc" size="10" placeholder="9325"></td>
+			</tr>
+			<tr>
+				<th class="centered"><label for="cn">Country</label></th>
+				<td><select name="country" id="cn">
+				<option value="country1">Bulgaria</option>
+				<option value="country2">England</option>
+				<option value="country3">Germany</option>
+			</select>
+				</td>
+			</tr>
+
+			<tr>
+				<th class="centered"><label for="phone">Phone (country code,<br>
+			area code, number)</label></th>
+				<td> (+ <input type="text" name="phone" id="phone" size="4"> )
+					<input type="text" name="phone" size="4"> - <input type="text" name="phone" size="6">
+				</td>
+			</tr>
+			<tr>
+				<th class="centered"><label for="email">E-mail</label></th>
+				<td><input type="text" name="email" id="email" placeholder="nakov@kaspichan.org"></td>
+				<tr>
+
+					<tr>
+						<th class="centered"><label for="bday">Birth date</label></th>
+						<td>Month <input type="text" name="month" id="bday" size="1"> Day <input type="text" name="day" size="1"> Year
+							(4 digits) <input type="text" name="year" size="2">
+						</td>
+					</tr>
+					<tr>
+					<th class="centered"><label for="g">Gender</label></th>
+					<td><select name="gender" id="g">
+				<option value="g1">Male</option>
+				<option value="g2">Female</option>
+			</select>
+					</td>
+					</tr>
+					<tr>
+						<th class="centered"><label for="sd">Starting date</label></th>
+						<td><input type="radio" name="startdate" id="sd" value="Spring 2016">Spring 2016
+							<input type="radio" name="startdate" value="Summer 2016">Summer 2016
+						</td>
+					</tr>
+					<tr>
+						<th class="centered"><label for="c/q">Comments/Questions</label></th>
+						<td>
+							<textarea style="overflow:auto;resize:none" rows="3" id="c/q" placeholder="Please send me more information about the lodging"></textarea></td>
+							</tr>
+					</tbody>
+					
+					<tfoot>
+						<tr>
+							<td colspan="2" class="centered"><input type="submit" value="Submit" formaction="#" > <input type="reset" value="Clear This Form"></td>
+						</tr>
+					</tfoot>
+		</table>
+		</form>
+</body>
+
+</html>
